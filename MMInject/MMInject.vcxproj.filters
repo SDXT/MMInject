@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0A1730E2-EAF5-496d-A2EE-04D86096C9DB}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E2D5A56E-FFBF-4f04-BEE1-C2E57B07F692}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{B8056672-74DD-4e8f-9077-63DF818EA87D}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Native">
+      <UniqueIdentifier>{01b69644-7c84-4e7f-b2c0-4f16702886a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BlackBone">
+      <UniqueIdentifier>{7837851d-1c61-4e6c-8365-4b1a4d69f0b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BlackBone">
+      <UniqueIdentifier>{7b3b591b-75e1-4fa2-baa5-2deceb7bf247}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DynData.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Encryption.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IO.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MMInject.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadCfg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PE.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="s20.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VAD.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SSDT.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Process.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BlackBone\Loader.c">
+      <Filter>Source Files\BlackBone</Filter>
+    </ClCompile>
+    <ClCompile Include="BlackBone\VadHelpers.c">
+      <Filter>Source Files\BlackBone</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="zwapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\NativeStructs.h">
+      <Filter>Header Files\Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\NativeStructs7.h">
+      <Filter>Header Files\Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\NativeStructs10.h">
+      <Filter>Header Files\Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\NativeStructs81.h">
+      <Filter>Header Files\Native</Filter>
+    </ClInclude>
+    <ClInclude Include="Native\NativeEnums.h">
+      <Filter>Header Files\Native</Filter>
+    </ClInclude>
+    <ClInclude Include="BlackBone\Private.h">
+      <Filter>Header Files\BlackBone</Filter>
+    </ClInclude>
+    <ClInclude Include="BlackBone\VadHelpers.h">
+      <Filter>Header Files\BlackBone</Filter>
+    </ClInclude>
+    <ClInclude Include="BlackBone\Loader.h">
+      <Filter>Header Files\BlackBone</Filter>
+    </ClInclude>
+    <ClInclude Include="vad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MMInject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="s20.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringEncryptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

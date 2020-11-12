@@ -1,0 +1,28 @@
+API patches to make the VMP API work (or not) depending on #if OBFUSCATE
+--- VMProtectDDK.h	2018-09-19 18:24:49.603500000 +0200
++++ VMProtectDDK.h	2018-09-19 18:25:02.554500000 +0200
+@@ -1,13 +1,19 @@
+ #pragma once
+ 
++#if OBFUSCATE
+ #define VMP_IMPORT __declspec(dllimport)
++#else
++#define VMP_IMPORT
++#endif
+ #define VMP_API __stdcall
+ #define VMP_WCHAR wchar_t
+-#ifdef _WIN64
+-	#pragma comment(lib, "VMProtectDDK64.lib")
+-#else
+-	#pragma comment(lib, "VMProtectDDK32.lib")
+-#endif // _WIN64
++#if OBFUSCATE
++	#ifdef _WIN64
++		#pragma comment(lib, "VMProtectDDK64.lib")
++	#else
++		#pragma comment(lib, "VMProtectDDK32.lib")
++	#endif // _WIN64
++#endif
+ 
+ #ifdef __cplusplus
+ extern "C" {
